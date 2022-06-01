@@ -1,9 +1,20 @@
 import os
 from flask import Flask, render_template, request
+from flask_nav.elements import Navbar, View
+from flask_nav import Nav
 from dotenv import load_dotenv
 
 load_dotenv()
 app = Flask(__name__)
+
+# Create dynamic navbar instance
+nav_bar = Navbar('Navigation',
+                 View('Home', 'index'),
+                 View("Work Experience", 'experience')
+                 )
+nav = Nav()
+nav.register_element('navbar', nav_bar)
+nav.init_app(app)
 
 jobs = [
     {

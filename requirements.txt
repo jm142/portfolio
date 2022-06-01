@@ -10,3 +10,4 @@ pycparser==2.21
 PyMySQL==1.0.2
 python-dotenv==0.20.0
 Werkzeug==2.1.2
+flask_nav==0.6
