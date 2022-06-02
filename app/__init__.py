@@ -1,8 +1,9 @@
 import os
 from flask import Flask, render_template, request
 from flask_nav.elements import Navbar, View
-from flask_nav import Nav
+from flask_nav import Nav, register_renderer
 from dotenv import load_dotenv
+from navbar_renderer import NavbarRenderer
 
 load_dotenv()
 app = Flask(__name__)
@@ -12,9 +13,12 @@ nav_bar = Navbar('Navigation',
                  View('Home', 'index'),
                  View("Work Experience", 'experience')
                  )
+# Initialize and register Nav library
 nav = Nav()
-nav.register_element('navbar', nav_bar)
+nav.register_element('navigation', nav_bar)
 nav.init_app(app)
+# Register the custom navbar renderer
+register_renderer(app, 'navbar', NavbarRenderer)
 
 jobs = [
     {
