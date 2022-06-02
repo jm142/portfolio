@@ -1,0 +1,15 @@
+<header class="nav-bar">
+    <div class="nav-content">
+        <div class="nav-logo">
+            <img src="./static/img/logo.svg"/>
+        </div>
+        <div class="nav-links">
+
+            {% for view in views %}
+                <a class="nav-link" href="{{ view.url }}">{{ view.title }}</a>
+            {% else %}
+                <p>Error loading navbar</p>
+            {% endfor %}
+        </div>
+    </div>
+</header>
