@@ -10,7 +10,6 @@ class NavbarRenderer(Renderer):
         return render_template("components/navbar.html", views=views)
 
     def visit_View(self, node):
-        print(dir(node))
         return {
             "url": node.get_url(),
             "title": node.text
