@@ -1,3 +1,4 @@
+import json
 import os
 from flask import Flask, render_template, request
 from flask_nav.elements import Navbar, View
@@ -20,16 +21,8 @@ nav.init_app(app)
 # Register the custom navbar renderer
 register_renderer(app, 'navbar', NavbarRenderer)
 
-jobs = [
-    {
-        'title': "MLH Fellow",
-        'description': "I signed an NDA I can't tell you"
-    },
-    {
-        'title': "Student",
-        'description': "working on a degree"
-    }
-]
+json_path = os.path.join(app.root_path, "static/data", "group.json")
+json_data = json.load(open(json_path))
 
 
 @app.route('/')
@@ -39,4 +32,4 @@ def index():
 
 @app.route('/experience')
 def experience():
-    return render_template('experience.html', jobs=jobs)
+    return render_template('experience.html', jobs=[])
