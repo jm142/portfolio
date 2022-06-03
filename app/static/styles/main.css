@@ -107,3 +107,49 @@ body {
     font-size: 50px;
     font-weight: 700;
 }
+
+html{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.about{
+    margin: 0px;
+    width: 100%;
+    color: black;
+}
+
+.groupmate{
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.blurb{
+    min-width: 300px;
+    font-family: Lato, sans-serif;
+}
+
+img{
+    border-radius: 50%;
+}
+
+@media (min-width: 1150px){
+    .groupmate{
+        display: flex;
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .blurb + .blurb{
+        margin-left: 5em;
+    }
+}
