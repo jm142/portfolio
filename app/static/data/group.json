@@ -18,7 +18,8 @@
       "Toronto",
       "New York City",
       "Miami"
-    ]
+    ],
+    "favorite_color": "red"
   },
   "emily": {
     "work experience": [
@@ -39,7 +40,8 @@
       "Toronto",
       "New York City",
       "Miami"
-    ]
+    ],
+    "favorite_color": "green"
   },
   "jane": {
     "work experience": [
@@ -60,6 +62,7 @@
       "Toronto",
       "New York City",
       "Miami"
-    ]
+    ],
+    "favorite_color": "blue"
   }
 }
