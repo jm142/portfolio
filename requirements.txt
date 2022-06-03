@@ -11,3 +11,4 @@ PyMySQL==1.0.2
 python-dotenv==0.20.0
 Werkzeug==2.1.2
 flask_nav==0.6
+folium~=0.12.1.post1
