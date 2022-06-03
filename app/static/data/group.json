@@ -1,0 +1,65 @@
+{
+  "brandon": {
+    "work experience": [
+      {
+        "title": "Job Title",
+        "employer": "Employer",
+        "description": "Description"
+      }
+    ],
+    "hobbies": [
+      {
+        "title": "Hobby Name",
+        "image": "img/hobbies/hobby.jpg",
+        "description": "Description"
+      }
+    ],
+    "travel": [
+      "Toronto",
+      "New York City",
+      "Miami"
+    ]
+  },
+  "emily": {
+    "work experience": [
+      {
+        "title": "Job Title",
+        "employer": "Employer",
+        "description": "Description"
+      }
+    ],
+    "hobbies": [
+      {
+        "title": "Hobby Name",
+        "image": "img/hobbies/hobby.jpg",
+        "description": "Description"
+      }
+    ],
+    "travel": [
+      "Toronto",
+      "New York City",
+      "Miami"
+    ]
+  },
+  "jane": {
+    "work experience": [
+      {
+        "title": "Job Title",
+        "employer": "Employer",
+        "description": "Description"
+      }
+    ],
+    "hobbies": [
+      {
+        "title": "Hobby Name",
+        "image": "img/hobbies/hobby.jpg",
+        "description": "Description"
+      }
+    ],
+    "travel": [
+      "Toronto",
+      "New York City",
+      "Miami"
+    ]
+  }
+}
