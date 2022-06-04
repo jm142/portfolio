@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <!-- Navbar -->
     {{ nav.navigation.render(renderer='navbar') }}
 
     <div class="profile">
@@ -28,5 +29,77 @@
         </div>
         <h1>{{ title }}</h1>
     </div>
+
+     <!-- Columns/About us section -->
+    <section class="about" id="about">
+        <div class="about-groupmate">
+            <div class="about-blurb"> 
+                <h3>Emily</h3>
+                <!-- image/avatar of yourself -->
+                <img src="./static/img/">
+                
+                <!-- links to socials -->
+                <div>
+                    <a href="">
+                        <img src="./static/img/github.png">
+                    </a>
+
+                    <a href="">
+                        <img src="./static/img/linkedin.png" width="12%", height="12%">
+                    </a>
+                </div>
+
+                <!-- actual paragraph about you -->
+                <p>She sat down with her notebook in her hand, her mind wandering to faraway places. 
+                    She paused and considered all that had happened. 
+                    It hadn't gone as expected. 
+                    When the day began she thought it was going to be a bad one, 
+                    but as she sat recalling the day's events to write them down, 
+                    she had to admit, it had been a rather marvelous day.</p>
+            </div>
+
+            <div class="about-blurb">
+                <h3>Jane</h3>
+                <img src="./static/img/">
+                
+                <div>
+                    <a href="">
+                        <img src="./static/img/github.png">
+                    </a>
+
+                    <a href="">
+                        <img src="./static/img/linkedin.png" width="12%", height="12%">
+                    </a>
+                </div>
+                
+                <p>She had been told time and time again that the most important steps were the first and the last. 
+                    It was something that she carried within her in everything she did, but then he showed up and disrupted everything. 
+                    He told her that she had it wrong. 
+                    The first step wasn't the most important. The last step wasn't the most important. 
+                    It was the next step that was the most important.</p>
+            </div>
+
+            <div class="about-blurb">
+                <h3>Brandon</h3>
+                <img src="./static/img/">
+
+                <div>
+                    <a href="https://github.com/BrandonSomoza">
+                        <img src="./static/img/github.png">
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/brandonsomoza/">
+                        <img src="./static/img/linkedin.png" width="12%", height="12%">
+                    </a>
+                </div>
+
+                <p>"It's never good to give them details," Janice told her sister. "Always be a little vague and keep them guessing." 
+                    Her sister listened intently and nodded in agreement. 
+                    She didn't fully understand what her sister was saying but that didn't matter. 
+                    She loved her so much that she would have agreed to whatever came out of her mouth.</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
