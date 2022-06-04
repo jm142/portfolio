@@ -29,6 +29,11 @@ register_renderer(app, 'navbar', NavbarRenderer)
 json_path = os.path.join(app.root_path, "static/data", "group.json")
 json_data = json.load(open(json_path))
 
+# Check if templates/generated exists, if not create the folder
+folder_path = os.path.join(app.root_path, "templates/generated")
+if not os.path.isdir(folder_path):
+    os.mkdir(folder_path)
+
 # Generate the Folium map HTML
 generate_map(os.path.join(app.root_path, "templates/generated", "generated_map.html"), json_data)
 
