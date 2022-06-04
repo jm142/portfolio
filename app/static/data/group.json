@@ -1,5 +1,5 @@
 {
-  "brandon": {
+  "Brandon": {
     "work experience": [
       {
         "title": "Job Title",
@@ -21,7 +21,7 @@
     ],
     "favorite_color": "red"
   },
-  "emily": {
+  "Emily": {
     "work experience": [
       {
         "title": "Job Title",
@@ -38,12 +38,26 @@
     ],
     "travel": [
       "Toronto",
+      "Montreal",
+      "Halifax",
+      "Detroit",
       "New York City",
-      "Miami"
+      "Orlando",
+      "Chicago",
+      "Washington DC",
+      "Los Angeles",
+      "Las Vegas",
+      "Berlin",
+      "Reykjavik",
+      "Moscow",
+      "Venice",
+      "Paris",
+      "Barcelona",
+      "Manchester"
     ],
     "favorite_color": "green"
   },
-  "jane": {
+  "Jane": {
     "work experience": [
       {
         "title": "Job Title",
