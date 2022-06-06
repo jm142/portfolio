@@ -25,10 +25,11 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     width: auto;
+    padding-bottom: 100px;
 }
 
 #travel-map {
-    height: 500px;
+    height: 700px;
     text-align: center;
     margin-top: 50px;
 }
@@ -117,6 +118,15 @@ body {
 
 .nav-link:hover {
     background-color: #2570d9;
+}
+
+.hyena img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile {
