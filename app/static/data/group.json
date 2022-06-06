@@ -84,21 +84,19 @@
       "New York City",
       "Orlando",
       "Chicago",
-      "Washington DC",
       "Los Angeles",
       "Las Vegas",
       "Berlin",
       "Reykjavik",
       "Moscow",
       "Venice",
-      "Paris",
       "Barcelona",
       "Manchester"
     ],
     "favorite_color": "green"
   },
   "Jane": {
-    "profile pic": "static/img/placeholder.png",
+    "profile pic": "static/img/jane/profile.png",
     "about": "Write your about me blurb here.",
     "education": "Student at University",
     "social links": {
@@ -107,23 +105,32 @@
     },
     "work experience": [
       {
-        "title": "Job Title",
-        "employer": "Employer",
-        "description": "Description"
+        "title": "Intern",
+        "employer": "Knowledge & Library Services, Harvard Business School",
+        "description": "I supported the Finance and Enterprise (FES) services team with a variety of document management and finance projects, such as auditing using Excel, SharePoint Online page updates and creation. I attended and presented at team meetings as well as communicated with my mentor and FES team members in one-on-one meetings and through professional emails."
+      },
+      {
+        "title": "Intern",
+        "employer": "Good Shepherd Community Care",
+        "description": "Made phone calls to medical offices to request clinical information for new patients and their families and compiles various information packets for them."
       }
     ],
     "hobbies": [
       {
-        "title": "Hobby Name",
-        "image": "static/img/placeholder.png",
-        "description": "Description"
+        "title": "fencing",
+        "image": "static/img/jane/fencing.png",
+        "description": "In high school, I was a co-captain of the varsity co-ed fencing team junior and senior year. Our women’s team placed second and third at regional tournaments against other high schools."
       }
     ],
     "travel": [
-      "Toronto",
+      "Boston",
       "New York City",
-      "Miami"
+      "Providence",
+      "Washington DC",
+      "Paris",
+      "Shanghai",
+      "Houston"
     ],
-    "favorite_color": "blue"
+    "favorite_color": "pink"
   }
 }
