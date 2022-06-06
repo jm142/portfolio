@@ -29,26 +29,26 @@
     "favorite_color": "red"
   },
   "Emily": {
-    "profile pic": "static/img/placeholder.png",
-    "about": "Write your about me blurb here.",
-    "education": "Student at University",
+    "profile pic": "static/img/emily/profile.png",
+    "about": "Hi! I'm Emily! While I may be terrible at writing blurbs about myself, I'm great at learning new things and making stuff work on a tight deadline! I've been programming for almost ten years now and am excited to apply my skills towards working in a production environment.",
+    "education": "Software Engineering at Ontario Tech University",
     "social links": {
-      "github": "",
-      "linkedin": ""
+      "github": "https://github.com/emilygoose",
+      "linkedin": "https://linkedin.com/in/emilygoose1"
     },
     "work experience": [
       {
-          "title": "Software Developer Co-Op",
+        "title": "Software Developer Co-Op",
         "employer": "RBC",
         "description": "4-month internship, developed internal tooling and processes for automating reporting"
       },
       {
-          "title": "Software Developer Co-Op",
+        "title": "Software Developer Co-Op",
         "employer": "RBC",
         "description": "8-month internship, developed prototypes for internal tools"
       },
       {
-          "title": "Innovation Developer",
+        "title": "Innovation Developer",
         "employer": "RBC",
         "description": "2-month internship, worked on performance review tool for co-op students"
       }
