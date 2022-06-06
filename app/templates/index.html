@@ -18,7 +18,7 @@
     <div class="about-groupmate">
         {% for member in json_data.keys() %}
             <div class="about-blurb">
-                <h3>{{ member }}</h3>
+                <h2 class="member-name">{{ member }}</h2>
                 <!-- image/avatar of yourself -->
                 <img class="about-image" alt="{{ member }}'s profile pic" src="{{ json_data[member]["profile pic"] }}">
                 <p class="education">{{ json_data[member]["education"] }}</p>
@@ -33,7 +33,7 @@
                     {% endfor %}
                 </div>
 
-                <p>{{ json_data[member]["about"] }}</p>
+                <p class="about-paragraph">{{ json_data[member]["about"] }}</p>
             </div>
         {% else %}
             <p>No group members to show info for</p>
