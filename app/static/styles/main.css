@@ -28,10 +28,21 @@ body {
     height:100%;
 }
 
+#map-legend {
+    margin: 20px;
+}
+
 .social-link {
     text-decoration: none;
     color: black;
     font-size: 24px;
+}
+
+.map-label {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin:5px;
+    padding:5px;
 }
 
 .nav-bar {

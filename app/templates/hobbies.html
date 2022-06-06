@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {%  include "components/header.html" %}
+    {% include "components/header.html" %}
 </head>
 <body>
 <!-- Navbar -->
@@ -34,6 +34,16 @@
     </div>
     <div id="travel-map">
         <h1>Where We've Been</h1>
+        <div id="map-legend">
+            {% for member in json_data.keys() %}
+                <span class="map-label">
+                    <i class="fa-solid fa-location-pin" style="color: {{ json_data[member]["favorite_color"] }}"></i>
+                    {{ member }}
+                </span>
+            {% else %}
+                <p>No members to display info for</p>
+            {% endfor %}
+        </div>
         <iframe src="{{ url_for('travel_map') }}" title="travel map"></iframe>
     </div>
 </section>
