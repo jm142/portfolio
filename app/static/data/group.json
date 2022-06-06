@@ -55,9 +55,14 @@
     ],
     "hobbies": [
       {
-        "title": "Hobby Name",
-        "image": "static/img/placeholder.png",
-        "description": "Description"
+        "title": "Flying",
+        "image": "static/img/emily/airplane.png",
+        "description": "I have my pilot's license and frequently rent a plane to go flying. My favorite place to go is above Toronto - I get a view of the city not many others get to experience!  "
+      },
+      {
+        "title": "Skiing",
+        "image": "static/img/emily/skiing.png",
+        "description": "In the winter I love to stay active by going cross-country skiing. It's a great workout and it's rewarding to see myself improve and get faster!"
       }
     ],
     "travel": [
