@@ -22,6 +22,7 @@
                 <h3>{{ member }}</h3>
                 {% for job in json_data[member]["work experience"] %}
                     <h1>{{ job.title }}</h1>
+                    <p>{{ job.employer }}</p>
                     <p>{{ job.description }}</p>
                 {% else %}
                     <p>No jobs. Unemployed.</p>
