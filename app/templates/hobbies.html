@@ -8,9 +8,6 @@
 {{ nav.navigation.render(renderer='navbar') }}
 
 <div class="profile">
-    <div id="profile-picture" class="profile-picture">
-        <img src="static/img/logo.jpg">
-    </div>
     <h1>{{ title }}</h1>
 </div>
 
@@ -18,14 +15,14 @@
 <section class="about" id="about">
     <div class="about-groupmate">
         {% for member in json_data.keys() %}
-            <div class="about-blurb">
-                <h3>{{ member }}</h3>
+            <div class="hobby-blurb padded">
+                <h2 class="member-name">{{ member }}</h2>
                 {% for hobby in json_data[member]["hobbies"] %}
-                    <h1>{{ hobby.title }}</h1>
-                    <img alt="{{ hobby.title }} image" src="{{ hobby.image }}">
-                    <p>{{ hobby.description }}</p>
+                    <h1 class="hobby-title">{{ hobby.title }}</h1>
+                    <img alt="{{ hobby.title }} image" class="hobby-image" src="{{ hobby.image }}">
+                    <p class="job-description">{{ hobby.description }}</p>
                 {% else %}
-                    <p>No jobs. Unemployed.</p>
+                    <p>No hobbies.</p>
                 {% endfor %}
             </div>
         {% else %}
