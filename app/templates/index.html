@@ -2,21 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:title" content="Personal Portfolio">
-    <meta property="og:description" content="My Personal Portfolio">
-    <meta property="og:url" content="{{ url }}">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <link lang='sass' rel="stylesheet" href="static/styles/main.css">
-    <link rel='icon' href='static/img/favicon.ico' type='image/x-icon' />
-    <title>{{ title }}</title>
+    {%  include "components/header.html" %}
 </head>
 
 <body>
@@ -41,12 +27,12 @@
                 
                 <!-- links to socials -->
                 <div>
-                    <a href="">
-                        <img src="static/img/github.png">
+                    <a class="social-link" href="">
+                        <i class="fa-brands fa-github"></i>
                     </a>
 
-                    <a href="">
-                        <img src="static/img/linkedin.png" width="12%" height="12%">
+                    <a class="social-link" href="">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
 
@@ -63,13 +49,15 @@
                 <h3>Jane</h3>
                 <img src="static/img/">
                 <p class="education">Degree at University</p>
+
+                <!-- links to socials -->
                 <div>
-                    <a href="">
-                        <img src="static/img/github.png">
+                    <a class="social-link" href="">
+                        <i class="fa-brands fa-github"></i>
                     </a>
 
-                    <a href="">
-                        <img src="static/img/linkedin.png" width="12%" height="12%">
+                    <a class="social-link" href="">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
                 
@@ -85,13 +73,14 @@
                 <img src="static/img/">
                 <p class="education">Degree at University</p>
 
+                <!-- links to socials -->
                 <div>
-                    <a href="https://github.com/BrandonSomoza">
-                        <img src="static/img/github.png">
+                    <a class="social-link" href="https://github.com/BrandonSomoza">
+                        <i class="fa-brands fa-github"></i>
                     </a>
 
-                    <a href="https://www.linkedin.com/in/brandonsomoza/">
-                        <img src="static/img/linkedin.png" width="12%" height="12%">
+                    <a class="social-link" href="https://www.linkedin.com/in/brandonsomoza/">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
 

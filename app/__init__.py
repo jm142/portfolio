@@ -40,17 +40,17 @@ generate_map(os.path.join(app.root_path, "templates/generated", "generated_map.h
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"))
+    return render_template('index.html', title="About Us", url=os.getenv("URL"))
 
 
 @app.route('/experience')
 def experience():
-    return render_template('experience.html', json_data=json_data)
+    return render_template('experience.html', json_data=json_data, title="Work Experience", url=os.getenv("URL"))
 
 
 @app.route('/hobbies')
 def hobbies():
-    return render_template('hobbies.html', json_data=json_data)
+    return render_template('hobbies.html', json_data=json_data, title="Hobbies", url=os.getenv("URL"))
 
 
 # This route is only used in an iframe, so it doesn't need to be on the navbar
