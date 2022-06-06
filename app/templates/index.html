@@ -18,7 +18,7 @@
     <div class="about-groupmate">
         {% for member in json_data.keys() %}
             <div class="about-blurb">
-                <h2>{{ member }}</h2>
+                <h2 class="member-name">{{ member }}</h2>
                 <!-- image/avatar of yourself -->
                 <img class="about-image" alt="{{ member }}'s profile pic" src="{{ json_data[member]["profile pic"] }}">
                 <p class="education">{{ json_data[member]["education"] }}</p>

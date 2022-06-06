@@ -175,6 +175,38 @@ body {
     text-align: center;
 }
 
+.experience-blurb {
+    font-family: Lato, sans-serif;
+    min-width: 300px;
+}
+
+.member-name {
+    text-align: center;
+}
+
+.job-block {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.job-title {
+    margin-bottom: 5px;
+}
+
+.job-description {
+    text-align: justify;
+}
+
+.padded {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.job-employer {
+    font-style: italic;
+    margin: 0;
+}
+
 .about-img {
     border-radius: 50%;
 }
