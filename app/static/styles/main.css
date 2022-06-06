@@ -28,6 +28,12 @@ body {
     height:100%;
 }
 
+.social-link {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
 .nav-bar {
     width: 100%;
     background-color: #1C539F;
