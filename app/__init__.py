@@ -16,7 +16,7 @@ app = Flask(__name__)
 nav_bar = Navbar('Navigation',
                  View('Home', 'index'),
                  View('Work Experience', 'experience'),
-                 View('Map', 'map_test')
+                 View('Hobbies', 'hobbies')
                  )
 # Initialize and register Nav library
 nav = Nav()
@@ -45,9 +45,14 @@ def index():
 
 @app.route('/experience')
 def experience():
-    return render_template('experience.html', jobs=[], json_data=json_data)
+    return render_template('experience.html', json_data=json_data)
+
+
+@app.route('/hobbies')
+def hobbies():
+    return render_template('hobbies.html', json_data=json_data)
 
 
 @app.route('/map')
-def map_test():
+def travel_map():
     return render_template('map.html')
