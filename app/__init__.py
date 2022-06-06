@@ -53,6 +53,7 @@ def hobbies():
     return render_template('hobbies.html', json_data=json_data)
 
 
+# This route is only used in an iframe, so it doesn't need to be on the navbar
 @app.route('/map')
 def travel_map():
-    return render_template('map.html')
+    return render_template('generated/generated_map.html')
