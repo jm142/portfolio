@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {%  include "components/header.html" %}
+    {% include "components/header.html" %}
 </head>
 <body>
 <!-- Navbar -->
 {{ nav.navigation.render(renderer='navbar') }}
 
 <div class="profile">
-    <div id="profile-picture" class="profile-picture">
-        <img src="static/img/logo.jpg">
-    </div>
     <h1>{{ title }}</h1>
 </div>
 
@@ -18,16 +15,19 @@
 <section class="about" id="about">
     <div class="about-groupmate">
         {% for member in json_data.keys() %}
-            <div class="about-blurb">
-                <h3>{{ member }}</h3>
+            <div class="experience-blurb padded">
+                <h2 class="member-name">{{ member }}</h2>
                 {% for job in json_data[member]["work experience"] %}
-                    <h1>{{ job.title }}</h1>
-                    <p>{{ job.employer }}</p>
-                    <p>{{ job.description }}</p>
+                    <div class="job-block">
+                        <h3 class="job-title">{{ job.title }}</h3>
+                        <p class="job-employer">{{ job.employer }}</p>
+                        <p class="job-description">{{ job.description }}</p>
+                    </div>
                 {% else %}
                     <p>No jobs. Unemployed.</p>
                 {% endfor %}
             </div>
+
         {% else %}
             <p>No group members to get work experience</p>
         {% endfor %}
