@@ -17,6 +17,7 @@
         {% for member in json_data.keys() %}
             <div class="experience-blurb padded">
                 <h2 class="member-name">{{ member }}</h2>
+                <hr>
                 {% for job in json_data[member]["work experience"] %}
                     <div class="job-block">
                         <h3 class="job-title">{{ job.title }}</h3>

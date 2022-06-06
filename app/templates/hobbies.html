@@ -17,6 +17,7 @@
         {% for member in json_data.keys() %}
             <div class="hobby-blurb padded">
                 <h2 class="member-name">{{ member }}</h2>
+                <hr>
                 {% for hobby in json_data[member]["hobbies"] %}
                     <h1 class="hobby-title">{{ hobby.title }}</h1>
                     <img alt="{{ hobby.title }} image" class="hobby-image" src="{{ hobby.image }}">
