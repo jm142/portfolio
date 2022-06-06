@@ -45,7 +45,7 @@ def index():
 
 @app.route('/experience')
 def experience():
-    return render_template('experience.html', jobs=[])
+    return render_template('experience.html', jobs=[], json_data=json_data)
 
 
 @app.route('/map')
