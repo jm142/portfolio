@@ -4,8 +4,9 @@ p, h1, h2, h3, h4, h5, h6, button {
 
 html {
     background-color: white;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 
@@ -15,7 +16,8 @@ body {
     width: auto;
     overflow-x: hidden;
     font-family: "Roboto", serif;
-    margin: 0px;
+    margin: 0;
+    min-height: 100%;
 }
 
 #travel-map {
@@ -30,6 +32,11 @@ body {
 
 #map-legend {
     margin: 20px;
+}
+
+.about-image {
+    border-radius: 50%;
+    height: 200px;
 }
 
 .social-link {
@@ -98,7 +105,6 @@ body {
 .profile {
     background-color: #1d539f !important;
     text-align: center;
-    height: 320px;
     margin-bottom: 50px;
 }
 
@@ -106,6 +112,8 @@ body {
     font-size: 50px;
     font-weight: 700;
     color: white;
+    margin-top:0;
+    padding-bottom:20px;
 }
 
 .profile img {
@@ -124,7 +132,7 @@ body {
 }
 
 .banner {
-    padding: 20px 0px 50px 0px;
+    padding: 20px 0 50px 0;
     height: 150px;
     background-color: #1d539f;
 }
@@ -143,7 +151,7 @@ body {
 }
 
 .about {
-    margin: 0px;
+    margin: 0;
     width: 100%;
     color: black;
 }

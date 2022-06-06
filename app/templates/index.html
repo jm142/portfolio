@@ -2,95 +2,46 @@
 <html lang="en">
 
 <head>
-    {%  include "components/header.html" %}
+    {% include "components/header.html" %}
 </head>
 
 <body>
-    <!-- Navbar -->
-    {{ nav.navigation.render(renderer='navbar') }}
+<!-- Navbar -->
+{{ nav.navigation.render(renderer='navbar') }}
 
-    <div class="profile">
-        <div id="profile-picture" class="profile-picture">
-            <img src="static/img/logo.jpg">
-        </div>
-        <h1>{{ title }}</h1>
-    </div>
+<div class="profile">
+    <h1>{{ title }}</h1>
+</div>
 
-     <!-- Columns/About us section -->
-    <section class="about" id="about">
-        <div class="about-groupmate">
-            <div class="about-blurb"> 
-                <h3>Emily</h3>
+<!-- Columns/About us section -->
+<section class="about" id="about">
+    <div class="about-groupmate">
+        {% for member in json_data.keys() %}
+            <div class="about-blurb">
+                <h3>{{ member }}</h3>
                 <!-- image/avatar of yourself -->
-                <img src="static/img/">
-                <p class="education">Degree at University</p>
-                
-                <!-- links to socials -->
-                <div>
-                    <a class="social-link" href="">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a class="social-link" href="">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-
-                <!-- actual paragraph about you -->
-                <p>She sat down with her notebook in her hand, her mind wandering to faraway places. 
-                    She paused and considered all that had happened. 
-                    It hadn't gone as expected. 
-                    When the day began she thought it was going to be a bad one, 
-                    but as she sat recalling the day's events to write them down, 
-                    she had to admit, it had been a rather marvelous day.</p>
-            </div>
-
-            <div class="about-blurb">
-                <h3>Jane</h3>
-                <img src="static/img/">
-                <p class="education">Degree at University</p>
+                <img class="about-image" alt="{{ member }}'s profile pic" src="{{ json_data[member]["profile pic"] }}">
+                <p class="education">{{ json_data[member]["education"] }}</p>
 
                 <!-- links to socials -->
                 <div>
-                    <a class="social-link" href="">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a class="social-link" href="">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-                
-                <p>She had been told time and time again that the most important steps were the first and the last. 
-                    It was something that she carried within her in everything she did, but then he showed up and disrupted everything. 
-                    He told her that she had it wrong. 
-                    The first step wasn't the most important. The last step wasn't the most important. 
-                    It was the next step that was the most important.</p>
-            </div>
-
-            <div class="about-blurb">
-                <h3>Brandon</h3>
-                <img src="static/img/">
-                <p class="education">Degree at University</p>
-
-                <!-- links to socials -->
-                <div>
-                    <a class="social-link" href="https://github.com/BrandonSomoza">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-
-                    <a class="social-link" href="https://www.linkedin.com/in/brandonsomoza/">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
+                    <!-- No else clause - We want this to be blank with no social links -->
+                    {% for site in json_data[member]["social links"].keys() %}
+                        <a class="social-link" href="{{ json_data[member]["social links"][site] }}">
+                            <i class="fa-brands fa-{{ site }}"></i>
+                        </a>
+                    {% endfor %}
                 </div>
 
-                <p>"It's never good to give them details," Janice told her sister. "Always be a little vague and keep them guessing." 
-                    Her sister listened intently and nodded in agreement. 
-                    She didn't fully understand what her sister was saying but that didn't matter. 
-                    She loved her so much that she would have agreed to whatever came out of her mouth.</p>
+                <p>{{ json_data[member]["about"] }}</p>
             </div>
-        </div>
-    </section>
+        {% else %}
+            <p>No group members to show info for</p>
+        {% endfor %}
+
+
+    </div>
+</section>
 
 </body>
 </html>
