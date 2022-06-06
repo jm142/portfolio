@@ -1,6 +1,6 @@
 {
   "Brandon": {
-    "profile pic": "static/img/brandon.jpg",
+    "profile pic": "static/img/brandon/brandon.jpg",
     "about": "Hey! I'm a third year CS major at NYU and I'm excited to be a fellow for the summer! I first got into programming my second year of high school, and since then I have not looked back. I coded a couple of basic games like pong and a card memory game over that summer and really found myself enjoying the process to the fullest!",
     "education": "Student at NYU",
     "social links": {
@@ -22,12 +22,12 @@
     "hobbies": [
       {
         "title": "Soccer",
-        "image": "static/img/ball.webp",
+        "image": "static/img/brandon/ball.webp",
         "description": "I love everything to do with soccer. Playing it, watching it, reading about it, playing fifa, it is by far my favorite sport"
       },
       {
         "title": "Formula 1",
-        "image": "static/img/F1.jpeg",
+        "image": "static/img/brandon/F1.jpeg",
         "description": "I also enjoy watching formula 1. I used to find motor-racing boring (they go in circles for 50 laps how boring!) until I watched the Netflix series Drive to Survive. It helped me realize how much technique and finesse the sport requires."
       }
     ],
