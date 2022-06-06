@@ -40,7 +40,7 @@ generate_map(os.path.join(app.root_path, "templates/generated", "generated_map.h
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="About Us", url=os.getenv("URL"))
+    return render_template('index.html', json_data=json_data, title="About Us", url=os.getenv("URL"))
 
 
 @app.route('/experience')

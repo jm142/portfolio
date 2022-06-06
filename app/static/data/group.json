@@ -1,5 +1,12 @@
 {
   "Brandon": {
+    "profile pic": "static/img/placeholder.png",
+    "about": "Write your about me blurb here.",
+    "education": "Student at University",
+    "social links": {
+      "github": "https://github.com/BrandonSomoza",
+      "linkedin": "https://www.linkedin.com/in/brandonsomoza/"
+    },
     "work experience": [
       {
         "title": "Job Title",
@@ -10,7 +17,7 @@
     "hobbies": [
       {
         "title": "Hobby Name",
-        "image": "img/hobbies/hobby.jpg",
+        "image": "static/img/placeholder.png",
         "description": "Description"
       }
     ],
@@ -22,6 +29,13 @@
     "favorite_color": "red"
   },
   "Emily": {
+    "profile pic": "static/img/placeholder.png",
+    "about": "Write your about me blurb here.",
+    "education": "Student at University",
+    "social links": {
+      "github": "",
+      "linkedin": ""
+    },
     "work experience": [
       {
           "title": "Software Developer Co-Op",
@@ -42,7 +56,7 @@
     "hobbies": [
       {
         "title": "Hobby Name",
-        "image": "img/hobbies/hobby.jpg",
+        "image": "static/img/placeholder.png",
         "description": "Description"
       }
     ],
@@ -68,6 +82,13 @@
     "favorite_color": "green"
   },
   "Jane": {
+    "profile pic": "static/img/placeholder.png",
+    "about": "Write your about me blurb here.",
+    "education": "Student at University",
+    "social links": {
+      "github": "",
+      "linkedin": ""
+    },
     "work experience": [
       {
         "title": "Job Title",
@@ -78,7 +99,7 @@
     "hobbies": [
       {
         "title": "Hobby Name",
-        "image": "img/hobbies/hobby.jpg",
+        "image": "static/img/placeholder.png",
         "description": "Description"
       }
     ],
