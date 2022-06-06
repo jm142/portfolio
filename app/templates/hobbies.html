@@ -34,9 +34,10 @@
         {% for member in json_data.keys() %}
             <div class="about-blurb">
                 <h3>{{ member }}</h3>
-                {% for job in json_data[member]["work experience"] %}
-                    <h1>{{ job.title }}</h1>
-                    <p>{{ job.description }}</p>
+                {% for hobby in json_data[member]["hobbies"] %}
+                    <h1>{{ hobby.title }}</h1>
+                    <img alt="{{ hobby.title }} image" src="{{ hobby.image }}">
+                    <p>{{ hobby.description }}</p>
                 {% else %}
                     <p>No jobs. Unemployed.</p>
                 {% endfor %}
@@ -44,6 +45,10 @@
         {% else %}
             <p>No group members to get work experience</p>
         {% endfor %}
+    </div>
+    <div id="travel-map">
+        <h1>Where We've Been</h1>
+        <iframe src="{{ url_for('travel_map') }}" title="travel map"></iframe>
     </div>
 </section>
 </body>
