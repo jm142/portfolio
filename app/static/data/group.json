@@ -24,9 +24,19 @@
   "Emily": {
     "work experience": [
       {
-        "title": "Job Title",
-        "employer": "Employer",
-        "description": "Description"
+          "title": "Software Developer Co-Op",
+        "employer": "RBC",
+        "description": "4-month internship, developed internal tooling and processes for automating reporting"
+      },
+      {
+          "title": "Software Developer Co-Op",
+        "employer": "RBC",
+        "description": "8-month internship, developed prototypes for internal tools"
+      },
+      {
+          "title": "Innovation Developer",
+        "employer": "RBC",
+        "description": "2-month internship, worked on performance review tool for co-op students"
       }
     ],
     "hobbies": [
