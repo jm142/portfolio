@@ -1,3 +1,4 @@
+#!/bin/bash
 tmux kill-server
 cd portfolio
 git fetch && git reset origin/main --hard
