@@ -1,3 +1,4 @@
+from peewee import *
 import json
 import os
 
@@ -12,6 +13,15 @@ from navbar_renderer import NavbarRenderer
 load_dotenv()
 app = Flask(__name__)
 
+mydb =
+MYSQLDatabase(os.getenv("MYSQL_DATABASE"),
+              user=os.getenv("MYSQL_DATABASE"),
+              password=os.getenv("MYSQL_PASSWORD"),
+              host=os.getenv("MYSQL_HOST"),
+              port=3306
+)
+
+print(mydb)
 # Create dynamic navbar instance
 nav_bar = Navbar('Navigation',
                  View('Home', 'index'),
