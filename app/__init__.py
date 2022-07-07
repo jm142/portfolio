@@ -13,11 +13,10 @@ from generate_map import generate_map
 from navbar_renderer import NavbarRenderer
 
 mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
-                     user=os.getenv("MYSQL_DATABASE"),
+                     user=os.getenv("MYSQL_USER"),
                      password=os.getenv("MYSQL_PASSWORD"),
                      host=os.getenv("MYSQL_HOST"),
                      port=3306
-)
 
 class TimelinePost(Model):
     name = CharField()
@@ -97,3 +96,6 @@ def get_time_line_post():
             for p in TimelinePost.select().order_by(TimelinePost.created_at.desc())
             ]
         }
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.html', title="Timeline")
