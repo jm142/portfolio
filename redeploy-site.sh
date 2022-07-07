@@ -10,7 +10,7 @@ git fetch && git reset origin/main --hard
 source python3-virtualenv/bin/activate
 
 # Install requirements
-python3.8 -m pip install -r requirements.txt
+pip install -r requirements.txt
 
 # Start Flask in a detached tmux session
 tmux new-session -d -s Flask
