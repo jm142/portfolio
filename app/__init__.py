@@ -12,6 +12,13 @@ from flask_nav.elements import Navbar, View
 from generate_map import generate_map
 from navbar_renderer import NavbarRenderer
 
+mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
+                     user=os.getenv("MYSQL_DATABASE"),
+                     password=os.getenv("MYSQL_PASSWORD"),
+                     host=os.getenv("MYSQL_HOST"),
+                     port=3306
+)
+
 class TimelinePost(Model):
     name = CharField()
     email = CharField()
@@ -25,13 +32,6 @@ mydb.connect()
 mydb.create_tables([TimelinePost])
 load_dotenv()
 app = Flask(__name__)
-
-mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
-                     user=os.getenv("MYSQL_DATABASE"),
-                     password=os.getenv("MYSQL_PASSWORD"),
-                     host=os.getenv("MYSQL_HOST"),
-                     port=3306
-)
 
 print(mydb)
 # Create dynamic navbar instance
