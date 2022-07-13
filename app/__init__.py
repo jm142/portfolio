@@ -114,6 +114,7 @@ def post_post():
     elif (len(content) == 0):
         return "Invalid content", 400
     else:
+        print(timeline_post)
         return model_to_dict(timeline_post)
 
 
