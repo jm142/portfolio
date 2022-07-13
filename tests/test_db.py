@@ -1,4 +1,6 @@
 import unittest
+import os
+os.environ['TESTING'] = 'true'
 from peewee import *
 
 from app import TimelinePost
