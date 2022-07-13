@@ -108,15 +108,15 @@ def post_post():
     timeline_post = TimelinePost.create(name=name, email=email, content=content)
     email_re=re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-za-z0-9-]+(\.[A-Z|a-z]{2,})+')
     if (not 'name' in request.form):
+        print("name")
         return "Invalid name", 400
-    elif re.fullmatch(email_re, request.form['email']):
+    elif not re.fullmatch(email_re, email):
+        print("email")
         return "Invalid email", 400
-    elif (len(request.form['content']) == 0):
+    elif (len(content) == 0):
+        print("content")
         return "Invalid content", 400
     else:
-        name = request.form['name']
-        email = request.form['email']
-        content = request.form['content']
         print(timeline_post)
         return model_to_dict(timeline_post)
 
