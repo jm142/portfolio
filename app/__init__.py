@@ -105,7 +105,6 @@ def post_post():
     name = request.form.get('name', False)
     email = request.form.get('email', False)
     content = request.form.get('content', False)
-    timeline_post = TimelinePost.create(name=name, email=email, content=content)
     email_re=re.compile(r'([A-Za-z0-9]+[.-_])*[A-Za-z0-9]+@[A-za-z0-9-]+(\.[A-Z|a-z]{2,})+')
     if (not 'name' in request.form):
         return "Invalid name", 400
@@ -114,6 +113,7 @@ def post_post():
     elif (len(content) == 0):
         return "Invalid content", 400
     else:
+        timeline_post = TimelinePost.create(name=name, email=email, content=content)
         print(timeline_post)
         return model_to_dict(timeline_post)
 
