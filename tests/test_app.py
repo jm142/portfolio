@@ -24,6 +24,7 @@ class AppTestCase(unittest.TestCase):
         assert response.is_json
         json = response.get_json()
         assert "timeline_posts" in json
+	print(json["timeline_posts"])
         assert len(json["timeline_posts"]) == 0
         # TODO Add more tests relating to the /api/timeline_post GET and POST apis
         # TODO Add more tests relating to the timeline page
